@@ -1,0 +1,19 @@
+body{
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(14, 13, 13);
+    color: rgb(244, 248, 244);
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+.cobrinhaImagem{
+    height:100px;
+    margin-top: 20px;
+}
