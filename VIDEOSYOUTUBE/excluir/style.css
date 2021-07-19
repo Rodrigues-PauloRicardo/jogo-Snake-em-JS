@@ -1,0 +1,25 @@
+
+.caixa{
+    display: flex;                          /* alinhamento */
+    justify-content: center;                /* alinhamento */  
+    align-items: center;                    /* alinhamento */
+    width: auto;                            /* LARGURA     */
+    height: 100px;                         /* ALTURA     */
+    border: 5px solid purple;
+    background-color: khaki;              /* COR DA CAIXA     */
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aqua;
+    font-size: 20px;  
+    font-style: italic;
+}
+
+body{
+    background-color: rgb(119, 241, 245);
+}
+
+.botao{
+    background-color: red;
+    color: white;
+}
+
