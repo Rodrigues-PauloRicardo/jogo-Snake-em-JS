@@ -1,16 +1,54 @@
-body{
-    height: 95vh;
-    width: 95vw;
+body{    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:rgb(14, 13, 13);
     color: rgb(244, 248, 244);
+    border: 1px solid red;
+    margin: 2px;
+    overflow: hidden;   
+}
+canvas{
+    padding: 5px;
+    border: 1px solid red;
+    overflow: hidden;
+    max-width: 100%;
 }
 
+#box_btn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red; 
+    width: 150px;
+    margin-top: 500PX;  
+    
+}
+
+button{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;    
+    
+}
+#space{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    width: 100%;
+    margin: -10px;
+}
+
+
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .cobrinhaImagem{

@@ -1,7 +1,7 @@
-let canvas = document.getElementById("snake"); //criar elemento que irá rodar o jogo
-let context = canvas.getContext("2d"); //....
+let canvas = document.getElementById("snake");
+let context = canvas.getContext("2d");
 let box = 32;
-let snake = []; //criar cobrinha como lista, já que ela vai ser uma série de coordenadas, que quando pintadas, criam os quadradinhos
+let snake = [];
 snake[0] ={
     x: 8 * box,
     y: 8 * box
@@ -14,7 +14,7 @@ let food ={
 
 function criarBG(){
     context.fillStyle = "lightgreen";
-    context.fillRect(0, 0, 16*box, 16*box); //desenha o retângulo usando x e y e a largura e altura setadas
+    context.fillRect(0, 0, 16*box, 16*box);
 }
 
 function criarCobrinha (){
@@ -29,15 +29,28 @@ function drawFood (){
     context.fillRect(food.x, food.y, box, box);
 }
 
-//quando um evento acontece, detecta e chama uma função
-document.addEventListener('keydown', update);
-
 function update(event){
-    if(event.keyCode == 37 && direction != 'right') direction = 'left';
-    if(event.keyCode == 38 && direction != 'down') direction = 'up';
-    if(event.keyCode == 39 && direction != 'left') direction = 'right';
-    if(event.keyCode == 40 && direction != 'up') direction = 'down';
+    // Atualize a direção com base na tecla pressionada
+    if(event.keyCode == 37 && direction != "right") direction = "left";
+    if(event.keyCode == 38 && direction != "down") direction = "up";
+    if(event.keyCode == 39 && direction != "left") direction = "right";
+    if(event.keyCode == 40 && direction != "up") direction = "down";
 }
+
+function updateDirection(event) { // Atualize a direção com base no botão clicado, apenas se a cobra não estiver indo para baixo    
+    if (direction != "down" && event.target.id === "up") {
+        direction = "up";      
+    } else if (direction != "left" && event.target.id === "right") {
+        direction = "right";   
+    }
+}
+
+let buttonUp = document.getElementById("up");
+buttonUp.addEventListener("click", updateDirection);
+
+let buttonRight = document.getElementById("right");
+buttonRight.addEventListener("click", updateDirection);
+
 
 function iniciarJogo(){    
 
