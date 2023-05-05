@@ -32,7 +32,7 @@ canvas{
     flex-direction: column;
     justify-content: center;
     align-items: center;      
-    margin-top: 400px;
+    margin-top: 700px;
     margin-left: 0;
     width: 150px;      
 }
@@ -64,3 +64,4 @@ button{
 .cobrinhaImagem{
     height:100px;     
 }
+
