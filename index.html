@@ -9,29 +9,39 @@
     <title>Jogo Snake</title>
 </head>
 <body>
+    <div class="geral">
     <div class="name">
     <img src="imagem/cobrinha.jpg" class="cobrinhaImagem" alt="imagem Cobra" id="cobrinha">
     <h1>My Game</h1>     
     </div>
-    <footer class="footer">Desenvolvido por Paulo Ricardo </footer> 
+   
+    <div id="box_game">
+        <div class="box_btn">
+        </div>
     <canvas id="snake" width="512" height="512"></canvas> <!--canvas é o elemento que trabalha a parte gráfica do jogo  -->
-
-
-
-
- <div id="box_btn">
-    <div>
-    <button id="up" >C</button>    
+    <div class="box_btn">
+        <div>
+        <button id="up" >C</button>    
+        </div>
+        <div id="space">
+            <button id="left" >E</button>        
+            <button id="right" >D</button>
+        </div>
+        <div>
+            <button id="down" >B</button>
+        </div>
+      </div>
     </div>
-    <div id="space">
-        <button id="left" >E</button>        
-        <button id="right" >D</button>
-    </div>
-    <div>
-        <button id="down" >B</button>
-    </div>
-  </div> 
- 
+
+
+
+</div>
+
+<div class="rodape">
+    <footer class="footer">Desenvolvido por Paulo Ricardo </footer>
+</div> 
+
+
 </body>
 
 
