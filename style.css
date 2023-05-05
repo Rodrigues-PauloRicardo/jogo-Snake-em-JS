@@ -119,11 +119,12 @@ button{
 
 .rodape{
     
-    font-size: 1.3rem; 
+    font-size: .8rem; 
     font-weight: bold;  
     display: flex;    
     color: black;    
-    font-size: 1.2 rem;        
+    font-size: 1.2 rem;
+    margin-top: 5px;      
     width: 100%;
     padding: 2px;
 }
