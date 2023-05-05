@@ -117,12 +117,12 @@ button{
     height:5rem;     
 }
 
-.rodape{position: absolute; 
+.rodape{
+    
     font-size: 1.3rem; 
     font-weight: bold;  
     display: flex;    
-    color: black;
-    opacity: .4;
+    color: black;    
     font-size: 1.2 rem;        
     width: 100%;
     padding: 2px;
