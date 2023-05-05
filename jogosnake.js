@@ -42,14 +42,30 @@ function updateDirection(event) { // Atualize a direção com base no botão cli
         direction = "up";      
     } else if (direction != "left" && event.target.id === "right") {
         direction = "right";   
-    }
+    } else if (direction != "right" && event.target.id === "left") {
+        direction = "left";
+    } else if (direction != "up" && event.target.id === "down") {
+        direction = "down";    
+}
 }
 
-let buttonUp = document.getElementById("up");
+
+
+
+
+let buttonUp = document.getElementById("up");            //CIMA
 buttonUp.addEventListener("click", updateDirection);
 
+let buttonDown = document.getElementById("down");
+buttonDown.addEventListener("click", updateDirection);  //BAIXO
+
 let buttonRight = document.getElementById("right");
-buttonRight.addEventListener("click", updateDirection);
+buttonRight.addEventListener("click", updateDirection);  //DIREITA
+
+let buttonLeft = document.getElementById("left");
+buttonLeft.addEventListener("click", updateDirection);  //DIREITA
+
+
 
 
 function iniciarJogo(){    
