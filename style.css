@@ -35,9 +35,7 @@ body{
     background-color: rgb(63, 180, 141);          
 }
 
-#cobrinha{
-    max-height: 100px;
-}
+
 
 @media screen and (max-width:450px) {
     .name{
@@ -47,11 +45,16 @@ body{
         height: 110px;  
 }
 }
-
+#cobrinha{
+    max-height: 100px;
+    
+}
 h1{
-    color: rgb(10, 10, 10);}
-canvas{   
-    max-width: 100%;
+    color: rgb(10, 10, 10);
+}
+
+#snake{    
+    max-height: 440px;
 }
 
 #box_game{    
@@ -83,8 +86,7 @@ canvas{
     align-items: center;
     margin-top: 15px;      
     margin-left: 0;
-    height: 13rem;
-    width: 70%;     
+    width: 70%;   
   }
 }
 
